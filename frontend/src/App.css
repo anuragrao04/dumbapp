@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.timer-section,
+.action-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #e6e6e6;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #d9d9d9;
+}
+
+button.selected {
+  background-color: #4caf50;
+  color: white;
+  border-color: #45a049;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input[type="number"],
+input[type="text"] {
+  margin-left: 10px;
+}
+
+#scheduleBtn {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+#scheduleBtn:hover {
+  background-color: #45a049;
+}
+
+.flowchart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow-down {
+  width: 20px;
+  height: 20px;
+  margin: 10px 0;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 512px) {
+  .container {
+    display: none;
+  }
+
+  body:after {
+    content: "This app is only supported on desktop screens.";
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    color: red;
+  }
+}
